@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Dashboard extends BaseController
 {
     public function index()
     {
-        $data = ['content' => 'home'];
+        $data = ['content' => 'dashboard'];
         return view('master', $data);
     }    
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php echo $this->include('meta') ?>
+
 <body>
   <div id="app">
     <div class="main-wrapper">
@@ -75,72 +76,6 @@
           </div>
         </form>
         <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right">
-              <div class="dropdown-header">Messages
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-message">
-                <a href="#" class="dropdown-item dropdown-item-unread">
-                  <div class="dropdown-item-avatar">
-                    <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle">
-                    <div class="is-online"></div>
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Kusnaedi</b>
-                    <p>Hello, Bro!</p>
-                    <div class="time">10 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item dropdown-item-unread">
-                  <div class="dropdown-item-avatar">
-                    <img alt="image" src="../assets/img/avatar/avatar-2.png" class="rounded-circle">
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Dedik Sugiharto</b>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                    <div class="time">12 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item dropdown-item-unread">
-                  <div class="dropdown-item-avatar">
-                    <img alt="image" src="../assets/img/avatar/avatar-3.png" class="rounded-circle">
-                    <div class="is-online"></div>
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Agung Ardiansyah</b>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="time">12 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="dropdown-item-avatar">
-                    <img alt="image" src="../assets/img/avatar/avatar-4.png" class="rounded-circle">
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Ardian Rahardiansyah</b>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                    <div class="time">16 Hours Ago</div>
-                  </div>
-                </a>
-                <a href="#" class="dropdown-item">
-                  <div class="dropdown-item-avatar">
-                    <img alt="image" src="../assets/img/avatar/avatar-5.png" class="rounded-circle">
-                  </div>
-                  <div class="dropdown-item-desc">
-                    <b>Alfa Zulkarnain</b>
-                    <p>Exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                    <div class="time">Yesterday</div>
-                  </div>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li>
           <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right">
               <div class="dropdown-header">Notifications
@@ -201,8 +136,9 @@
             </div>
           </li>
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi, Brader</div></a>
+              <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Hi, Brader</div>
+            </a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
@@ -222,74 +158,45 @@
           </li>
         </ul>
       </nav>
-      <div class="main-sidebar">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index-0.html">Morvice</a>
-          </div>
-          <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">Mor</a>
-          </div>
-          <ul class="sidebar-menu">
-              <li class="nav-item dropdown active">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Home</span></a>
-                <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="index-0.html">Dashboard</a></li>
-                  <li class="active"><a class="nav-link" href="index.html">Issue</a></li>
-                  <li><a class="nav-link" href="issue.html">Daftar Issue</a></li>
-                </ul>
-              </li>
-              <li class="menu-header">Pages</li>
-              <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Account</span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                  <li><a href="auth-login.html">Login</a></li>
-                  <li><a class="beep beep-sidebar" href="auth-login-2.html">Login 2</a></li>
-                  <li><a href="auth-register.html">Register</a></li>
-                  <li><a href="auth-reset-password.html">Reset Password</a></li>
-                </ul>
-              </li>
-        </aside>
-      </div>
-
+      <?php echo $this->include('nav') ?>
       <div class="main-content">
-          
+
         <!-- Main Content -->
         <?php echo $this->include($content) ?>
 
         <!-- Footer -->
         <footer class="main-footer">
-        <div class="footer-left">
-          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
-        </div>
-        <div class="footer-right">
-          2.3.0
-        </div>
-      </footer>
+          <div class="footer-left">
+            Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+          </div>
+          <div class="footer-right">
+            2.3.0
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
 
-  <!-- General JS Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="../assets/js/stisla.js"></script>
+    <!-- General JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../assets/js/stisla.js"></script>
 
-  <!-- JS Libraies -->
-  <script src="../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
-  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
-  <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="../node_modules/summernote/dist/summernote-bs4.js"></script>
-  <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="../node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../node_modules/summernote/dist/summernote-bs4.js"></script>
+    <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
-  <!-- Template JS File -->
-  <script src="../assets/js/scripts.js"></script>
-  <script src="../assets/js/custom.js"></script>
+    <!-- Template JS File -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/custom.js"></script>
 
-  <!-- Page Specific JS File -->
-  <script src="../assets/js/page/index.js"></script>
+    <!-- Page Specific JS File -->
+    <script src="../assets/js/page/index.js"></script>
 </body>
+
 </html>

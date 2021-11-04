@@ -52,10 +52,14 @@
                   <div class="card-header">
                     <h4>Laporan</h4>
                   </div>
-                  <textarea name="comment" id="comment" cols="39" rows="10" tabindex="0" class="textarea-comment" placeholder="Isi keluhan anda..."></textarea>
-                  <input type="file" name="file">
                   <div class="card-body">
-                    <canvas id="myChart" height="50"></canvas>
+                    <div class="form-group">
+                      <textarea class="form-control" data-height="150">Isi laporan anda...</textarea>
+                    </div>
+                    <div class="form-inline">
+                      <input type="file" class="form-control">
+                      <button class="btn btn-primary mr-1" type="submit">Kirim</button>
+                    </div>
                   </div>
                 </div>
               </div>

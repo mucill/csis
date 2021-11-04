@@ -12,7 +12,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="dashboard">Dashboard</a></li>
                     <li class="active"><a class="nav-link" href="home">Issue</a></li>
-                    <li><a class="nav-link" href="issue.html">Daftar Issue</a></li>
+                    <li><a class="nav-link" href="issue">Daftar Issue</a></li>
                 </ul>
             </li>
             <li class="menu-header">Pages</li>

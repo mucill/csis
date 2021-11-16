@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -31,7 +29,7 @@
                 <label for="username">Username</label>
                 <input id="username" type="username" class="form-control" name="username" tabindex="1" required autofocus>
                 <div class="invalid-feedback">
-                  Tolong Isi Username Anda
+                  Please fill in your email
                 </div>
               </div>
 
@@ -41,7 +39,7 @@
                 </div>
                 <input id="password" type="password" class="form-control" name="password" tabindex="2" required>
                 <div class="invalid-feedback">
-                  Tolong isi Password Anda
+                  please fill in your password
                 </div>
               </div>
 
@@ -53,7 +51,7 @@
               </div>
 
               <div class="form-group text-right">
-                <a href="auth-forgot-password.html" class="float-left mt-3">
+                <a href="LupaPassword" class="float-left mt-3">
                   Lupa Password?
                 </a>
                 <button type="submit" class="btn btn-primary btn-lg btn-icon icon-right" tabindex="4">
@@ -62,7 +60,7 @@
               </div>
 
               <div class="mt-5 text-center">
-                Belum Punya Akun? <a href="auth-register.html">Buat Akun Baru</a>
+                Belum Punya Akun? <a href="BuatAkun">Buat Akun Baru</a>
               </div>
             </form>
 
@@ -104,7 +102,3 @@
   <!-- Template JS File -->
   <script src="../assets/js/scripts.js"></script>
   <script src="../assets/js/custom.js"></script>
-
-  <!-- Page Specific JS File -->
-</body>
-</html>

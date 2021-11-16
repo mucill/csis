@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-class issue extends BaseController
+class profil extends BaseController
 {
     public function index()
     {
-        $data = ['content' => 'issue'];
+        $data = ['content' => 'profil'];
         return view('master', $data);
     }
 }

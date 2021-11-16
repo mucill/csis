@@ -2,11 +2,11 @@
 
 namespace App\Controllers;
 
-class issue extends BaseController
+class setting extends BaseController
 {
     public function index()
     {
-        $data = ['content' => 'issue'];
+        $data = ['content' => 'setting'];
         return view('master', $data);
     }
 }

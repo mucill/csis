@@ -141,17 +141,17 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
-              <a href="features-profile.html" class="dropdown-item has-icon">
+              <a href="profil" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profil
               </a>
-              <a href="akun.php" class="dropdown-item has-icon">
+              <a href="akun" class="dropdown-item has-icon">
                 <i class="fas fa-key"></i> Akun
               </a>
-              <a href="features-settings.html" class="dropdown-item has-icon">
+              <a href="setting" class="dropdown-item has-icon">
                 <i class="fas fa-cog"></i> Pengaturan
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item has-icon text-danger">
+              <a href="login" class="dropdown-item has-icon text-danger">
                 <i class="fas fa-sign-out-alt"></i> Logout
               </a>
             </div>
